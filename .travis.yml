@@ -6,6 +6,7 @@ sudo: required
 services: docker
 env:
   global:
+  - REPO_NAME=test-registry
   - secure: SxEoBhiI2o3r2ERrYCqZB1zJXEnhk4pYV1xiO6H72gVjwCfb21K/HNwu8I5PcXoUJ9E+p0f9yGOxzNIGoJ0khagk6RNF7jE9nRSdgYY6u9lh5oM3AnbLHnmE9oJlmU61bQyFvWDOLH2GjsijUQYovki88UL6Xq1KDvFpuWorCkddMH/7TDR5/EJjKh0dyf/qMw2vvyE6XUVX7XzuiuXJXpGdmolMINypQXvXccNfzqaiqqnWvRvW3o5x4fq5mMgTnNh25BjPf8HhzqpehB8bL6R2pBRshjaQLMKSRbTYcHEA0n4uVgYqiE6IMJutyX7phgijykS2Zo672hpAdOLNnwyvsKFs8awLtuMFPebYI0fj7n5yy8Kg82fiwqprOLWh5elzasiYamaf8wJQcKZsTGTuvbU/yJPWXzcVI/PqqGlNZHsed8RPoJE1PknDivzHGNiFrB0WCoOOQYKD0q5GUalqMwL5EXnqGyfQcT7DjTPLGrqUY7Vs45qT0CBFmY/mo8n/7c4gWrvfcAwm6VPrzZQiiOkp2plHba9S3ADNnaZPxr1Kjdfw1tgPiI2JeM70yjSgot/hV0uuA20ot7xF4NjedpAz5e/KG1Dpg8z7yrT42G/oZ2fi85YhnMyfQ9qagG5nxT02xmcg9H1oT3l1VqRUGaU2ZbafRzFe3aLlpW4=
   - secure: MBzj62no+4EQSQaspS9yTdTInB7F4e47lXn1N8OfdyxNI3822yb6ModMJowcdFlseouUhs2WDS3MgbanVwIAN5cNvDmPOYvybjts6eJqHt1enZKY5utqNddCLZCF0nyH2zVYlGl93/i4xRLyiUlIm7wIVRpTRDC+wTyv8/gujpeICXXEBpwEULHKcqQFYYpa2QjAdb3RkkxJ6OSUueFJNZEwu3zBBaQDqreKulq6TgsGytWmkdqHdGfpDxe1QtxdRik3jOe/WOLTr2oUVIraUaLnCLG2r5eJ9aBGuLzB+kShy3lVkCq7dhRngU4IZli3U8KGW6FYbFXwhajOeV7wytx4o7nMkAWaZEOJvjZR7D80tk2d7TmVr0jSFHzdbWkTEYmvhy7t8blXqxv+q+Ar6iOpaoNNZWROzGEb51p4XrCgMNwbvSlWxKI9kAh6WFs/C8KFpfYKYbA39cJD3GwQ5sZEi3dmnlkCWU0pFAB2sZ5AdZyiaFBZ19jKxVxpbhzFPXex+xReBv+UET2TtH/HRSnqGyy67R1sB2ljSIa4CK/9InMCpe6OuBOB46Y5sUBhQ1jkgYcDF+n4b5ypV9VoOnnLIe1ex6/NBGx0Q/mwWfC8/LsDMc5maPhUr7ZM4+wtxYGf1pL+j/QCgl08dBvwYOtPZAeMGSOKDyhOD9em+Z0=
   - secure: B8W2BYvaL+RiQK8yzOZL/2e2jsQMEjEa1O1zFH+kyJIqiru5P3Fxi7TpvecRHFwR9Fg93enTtU0YMW19UPxx/VAbJ1zQflZtQn55Up6oRXmDmq+ySSKZgmtDRn1rmKW8ShCYwXzrQo1ygqXOARrI+5mhDoi06l4f4NVrq+3hxccyb2e0xbz8MRMaTVOjVRbotQIYIMHi9AtIjohd3d4Idd3waLqOI3l0YBKaYC0R6VT0Q7cyiHrx352M3XGcuVRPk7aBSivoMmul7sv5IVUNL46Kqk/75maDXFiaKiI1AyeDPxAg/TE4aTa/y6IIzON03sNTQk0LXJTsoVV44u316CV7w0ACBUKtngzPzR4wxx46YhmEpthXl5RmR3jDSU1dFykuFY2L9FOaUo33zRaOBhomstpKjkl5pb/hGleZCNpiumXhn64F+5H/C3MsLYWCavvNcuekoFBE5mdwUGBMnbACp6y/IDob63LoePC8eYSbNmHT585zIdDoOICnphxaG2cphXlicgOkbBf3T4uaJgoH5eTRFww007jzptCOdT4sOsS566disZES0Vvmpg8j1X86TVvNQgmVgpQOArb72t5JXEX9Q5UDlyHbnVNC5fPAxQ2jK45JJljaIcn6vbx+cgtFxK4+g/QtPoO+ApWBnhPX8ikPaF2Vvbf39zRfiVE=
@@ -21,13 +22,13 @@ after_success:
 - docker --version
 - pip install --user awscli
 - export PATH=$PATH:$HOME/.local/bin
-- eval $(aws ecr get-login --region us-west2)
-- docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-- export REPO=$DOCKER_USER/k-auth
+- eval $(aws ecr get-login --region us-west-2)
+#- docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+#- export REPO=$DOCKER_USER/k-auth
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH
   ; fi`
 - echo $REPO:$TAG:$COMMIT
-- docker build -f Dockerfile -t $REPO:$COMMIT .
-- docker tag $REPO:$COMMIT $REPO:$TAG
+- docker build -f Dockerfile -t $REPO_NAME .
+- docker tag $REPO_NAME:latest 288824224421.dkr.ecr.us-west-2.amazonaws.com/$REPO_NAME:latest
 - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
-- docker push 288824224421.dkr.ecr.us-west-2.amazonaws.com/worksite-microservices
+- docker push 288824224421.dkr.ecr.us-west-2.amazonaws.com/$REPO_NAME:latest
