@@ -14,6 +14,8 @@ env:
   - COMMIT=${TRAVIS_COMMIT::6}
   - secure: jNubHlS5kDE3AhJ44jhgAP02t5qb+AZAmfW4JjZJq0QkrFS+yRWcXlfaLqi27Gd/rukBqDHER0qGPx4uc9av49+KO1ypG0QVdR92dtnNoWk2QXBBTF1xnEDkhKNO24x9JQXYHqIh+SYu/wzAfZjZxO99wKghnfjwYX/QSkobwMD5IaeE7EZT1Z9lRrFaa9NIrLlJxRE6GwpK8h1B9Pq0qcemilk+7JJjJVpJlzFvAbBzZa2Oflxm9hn7AXsatD/LjSxSDDodqvvMiqyq+DhewowbNUDYwRRiVamI55d0tSN5/iC65Xzk02R798TL+ukgiBhH4blektt1qcwNA+wg246ES1TjvOMRXR4QJ3hnl48mrv0wDSDtEdqPiOmP9gM+3WKsedjUuHFQ6z8pX8FN+GrnxeiytbYriJy9hn/j5xcbEf4KPSmtd00qaYAg4hzSY1jVi0G2FTU9yOD95yGoJrs2N68RIyRaGwgnCO67gx7vyQ7yNSYQwfp2PBC90ekhJ3KeLpDjlO8+Ab9pNIWGamZHKxnysmCE3EGSzAoVXrdIc2ldibpfpzU6ZEPyvp6lB+6SA58yE4G3W1ntrNwyyjAWC3h0IEA4ZqIlcmJJ7WI8mvtixHZvPyu3qRvL2Snb+zZUYWIs6RIzHX7xB+kzUtYG86K8b4OkTbjxDg+BkDI=
   - secure: g0P790M2e43dYBUAamsGSb4jqD2FNl87y5VC3A9I+NnyOTFJWaiuqBfj9yrpjV7Ro1Ve5V8zzwb1iHdv+qU7UBJl0JzsieoX4SlhSBcVC7MD9AvQJAmketdBv9+m/sDI9h7dnmk17SjZymP2kmM51zYFQ8N/QFHhjV+aROLZCfqvtMtdl3QOS8WXlSsuUngawo13ib1v5oyucmDiPKUFryuiMfBgu3DaXxwmPog89gcZAxMUudtigU8nb1663NYEtA0+F13roffGPuyaKl/fpzoPmqI3xCaDfGpEqqXCECFtzxxcKc9gY9ow9VR+Kf8NHNjTws6lkQCO6v4U2a5F483U9THZNKTLyDEySPv8yWi4guO4Cl6BwmvGO20SJtF8d+Tt6b5t6Bkr27HFR+ZkqJNy+jY6Sh3NjiQ6xsv1YG8Pa6mOyp1qO0EHxqybBDIOHgTCXtx0p1H0ZePQamvJvdvHLdvH/t6YLmshIIsGU1bM70g9aQKIiuY47ADzxdC5AWxOUjI5nWHXKAQYWcx83LL9lPrtIiGC/jIUv2uECa9NCdYCCxzEKDziZBh8z+7Vs5xdjcIf5vXkTBjPgYkJqtQH8QXrySSxo7Fb/9P7kgSVP0kNu2w+a1vHWwvNQfbJp28rG+F4zoCZwklae+tJkXjs/ixzctVMgLBR5xYO7JY=
+  - secure: AJcxSPGaN2D/J/1GZ7BzQxySJYdwCVuOuswtBGLAlQOadAY8bwomhDr20EBv4xF0id2bjVE97CD+unw3lazXtMlSJcZym6ZCTJXsfTk+ab/tujwJg0HgiIBLdXqgqLvpv0HiMBvvNnmtm0hITA+GDYI+cUA83hF3GGctdK6NSQZBtPM6Mpc6xo92fYfY4xblfMCLpcCGCqoeTfCYiJ/al/+cMzrtjZSX/W8ax107TCQsFEn0ea0ygxCHq8nxqBGQqiWxXE+ez6KUFId4bb28SriQpGcCN663WvQx7650qyeh5xz4hnx0iwRyhBZwEy4UaR3SZCwDM1BlOpb8Mw1w5LKl0m3ymNv+wIhM0HUFcIS8HQKq2Uhgh2IcBD+1gPH1SgW/0y/bTqrUc+MUTADIWbid0VJ36Wgp/O1UhFJm+yV9RqK2i5qCtTKxZYtisz3QdDK3ZC4AV1zXmvAXDYw0AdWKVccDwNX26nXNrN2s5q7NTPQL+/GIsIzdIITkZ2n1uMo40sck62iy3gWGq3FH9TepDWJYc/lbWCb56mErjRDXr0Zid5cmspaKcAQKv6oRIsGzkRH/SCzfx8izLY4BPZTLQIKmzSy9ewTNvs6MBqvkSNsmwIcxnCGExBe2AyaDuQwIxOyqPFCchVjS6ROH0Mw+wcM5ghE5/h1ev4lMsu0=
+  - secure: ei/dLfs/l2cOMug/+UYgFDB6+jlNCkVyAfMuuSVga+dbM/M+r7xVpngF1Ss0xWkQQbug0GdBeycw4WB69m8fl90xp/490bV3zl25Opa9GQ8Lh8+7XQXVKH4Rab5XA0t+vXEv+6Xdwi2BVcyLlK2o87zt5kR3edv/JkJVSmuF6bh/yhqkcc6MQoxsgBktN2clQw8aUBeIun6VfvVBKs70slxPLGRh74F9IfBFrB74DWRVzfp+6gHb8toSAzMDYzzFXWLHrl7VrzvYBFmGQ+/W5sNSOc5mAqnFSinyr2xzED6Zi5eq9bonjG6o+m89+s/n6ZnyBNeOs1ih1guRQdxrs5r2WpRrJPi9Nu1Hl9ugEz0CpxHH93b4fVf4e/pibUohIBqNaXxqsjMWKcwQG5Gy9TqT3nczZq04g2lGBZ0CZzY8Ux1/zkfTgKbd0W7qtxl2ms6NH8YGAQnf956jkP1eaMMjMAgzg63dtd/dY3d4Fxfvjy0H+PnTNCR9rYl5Z6za60j5n71ZxrDqIqy32HFPp9SLTc6bC3qU86HwRSL9VcQhVN8/l55TGyatwYp3YsqZAqnm6tyeq+1cGJTCRZcwH6XduV0rT7sQHsy8IX6TLm0fZns7fSBR/CFPHCg/uwejte5OQKzTJv2BpWO50E3dSHi9JdS/JyBxk2OYQwtMfnU=
 before_install:
 - docker build -t testimage .
 - docker run -d -p 80:3000 testimage
@@ -23,16 +25,12 @@ after_success:
 - docker --version
 - pip install --user awscli
 - export PATH=$PATH:$HOME/.local/bin
+- echo $AWS_ACCESS_KEY_ID
+- echo $AWS_SECRET_ACCESS_KEY
 - eval $(aws ecr get-login --region us-west-2)
-#- docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-#- export REPO=$DOCKER_USER/k-auth
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH
   ; fi`
 - echo $REPO:$TAG:$COMMIT
 - docker build -f Dockerfile -t $REPO_NAME .
 - docker tag $REPO_NAME:latest $REG_ID.dkr.ecr.us-west-2.amazonaws.com/$REPO_NAME:latest
-#- docker tag $REPO:$COMMIT $REPO:travis$TRAVIS_BUILD_NUMBER
 - docker push $REG_ID.dkr.ecr.us-west-2.amazonaws.com/$REPO_NAME:latest
-
-# ran
-# aws ecr create-repository --repository-name blueberry
