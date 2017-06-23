@@ -23,7 +23,7 @@ after_success:
 - docker --version
 - pip install --user awscli
 - export PATH=$PATH:$HOME/.local/bin
-- eval $(aws ecr get-login -no-include-email --region us-west-2)
+- eval $(aws ecr get-login --region us-west-2)
 #- docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
 #- export REPO=$DOCKER_USER/k-auth
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH
